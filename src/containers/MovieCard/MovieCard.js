@@ -51,7 +51,7 @@ export class MovieCard extends Component {
               />
               <text textAnchor="middle" x="17" y="22" className='movie-rating'>{this.props.voteAverage}</text>
             </svg>
-            <img className='popcorn-icon' src={favoriteIcon} alt='full popcorn' onClick={() => this.checkSignedIn()} />
+            <object className='popcorn-icon' data={favoriteIcon} name='popcorn icon' onClick={() => this.checkSignedIn()}> </object>
           </div>
           <h3 className='movie-title'>{this.props.title}</h3>
           <p className='movie-release'>{this.props.releaseDate}</p>
